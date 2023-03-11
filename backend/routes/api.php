@@ -1,5 +1,6 @@
 <?php
 
+use App\Events\Hello;
 use App\Http\Controllers\Api\FriendsController;
 use App\Http\Controllers\Api\LikesController;
 use App\Http\Controllers\Api\PostsController;
@@ -19,7 +20,10 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "api" middleware group. Make something great!
 |
 */
-
+Route::get('/test', function () {
+   Hello::dispatch();
+    return "Event has been sent!";
+});
 Route::post('/regi', [UserController::class, 'register']);
 Route::get('/users', [UserController::class, 'index']);
 Route::post('/login', [UserController::class, 'login']);

@@ -1,5 +1,6 @@
 <?php
 
+use App\Events\Hello;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/broadcast', function () {
+     Hello::dispatch();
+     return 'sent';
+});
+
 Route::get('/', function () {
+  
     return view('welcome');
 });
