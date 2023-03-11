@@ -82,8 +82,7 @@ const store = createStore({
                 console.log(e);
                 return e;
             });
-        }
-        ,
+        },
        likeItem({ commit }, data) {
             console.log('input text')
             console.log(data)
@@ -197,7 +196,6 @@ const store = createStore({
         addw() {
             console.log('sdfjkl');
             console.log(this.state.count);
-
             this.state.count++;
         }
     },
