@@ -1,8 +1,30 @@
-/** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
-  content: ["./src/**/*.{html,js,vue}","./src/components/**/*.{html,js,vue}"],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-}
+    purge: [
+        './vendor/laravel/jetstream/**/*.blade.php',
+        './storage/framework/views/*.php',
+        './resources/views/**/*.blade.php',
+        './resources/js/**/*.vue',
+    ],
+
+    theme: {
+        extend: {
+            fontFamily: {
+                sans: ['Nunito', ...defaultTheme.fontFamily.sans],
+                primary: ['Montserrat'],
+            },
+            spacing: {
+                '128': '32rem',
+            },
+        },
+    },
+
+    variants: {
+        extend: {
+            opacity: ['disabled'],
+        },
+    },
+
+    plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],
+};

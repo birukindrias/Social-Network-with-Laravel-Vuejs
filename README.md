@@ -1,30 +1,9 @@
-# ./
+## Social Network Series on Youtube
 
-This template should help get you started developing with Vue 3 in Vite.
+Social Network built with Laravel 8, Jetstream, Fortify, Inertia, Tailwind CSS
 
-## Recommended IDE Setup
+[Introduction Episode]
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-# Social-Network-with-Laravel-Vuejs
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=Y2_HSQU0fcI
+" target="_blank"><img src="http://img.youtube.com/vi/Y2_HSQU0fcI/0.jpg" 
+alt="The Vault Intro" width="240" height="180" border="10" /></a>
